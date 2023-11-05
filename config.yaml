@@ -1,0 +1,12 @@
+local_dirs: "~/project/data2/liu_project/huggingface_model"
+model:
+  name_or_path: "~/project/data2/liu_project/huggingface_model/qwen/Qwen-14B-Chat"
+
+loss: 
+  beta: 0.1
+  reference_free: false
+
+lora:
+  previous_lora_weights: "./weights/DPO_test"
+
+dataset: "./data/DPO_data_V1.json"
